@@ -43,4 +43,4 @@ These are optional additional lectures going into certain topics to a deeper lev
 1. `Functions of matrices` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=00023efe-9869-4f96-a597-ab8d01462ef4) [pdf](https://drive.google.com/file/d/1qTbgft-jEanOGP019TV96yvk9CqrDPjk/view?usp=sharing)
 2. `Runge-Kutta error analysis` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a504a22f-8596-44db-a605-ab9101397076) [pdf](https://drive.google.com/file/d/1-RQlKcvy2Qsik-EyRTPiLb_1GYohB-Ge/view?usp=sharing)
 3. `Dahlquist's Theorem` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9cd65745-5177-43ae-b987-aba0011175d4) [pdf](https://drive.google.com/open?id=1HQqk8b4nP1QnYxZMHsgKDRxMUkHCM2TK)
-4. `Orthogonal polynoials` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e538a22e-04d8-4079-9c09-aba701040030) [pdf](https://drive.google.com/open?id=1Q9NaZrs2kT26T6HfO5ttzkJgwwQizoPF)
+4. `Orthogonal polynomials` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e538a22e-04d8-4079-9c09-aba701040030) [pdf](https://drive.google.com/open?id=1Q9NaZrs2kT26T6HfO5ttzkJgwwQizoPF)
