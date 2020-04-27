@@ -15,7 +15,7 @@ The discussion board is found here: [https://github.com/orgs/trogdoncourses/team
 0. [Homework 0](https://classroom.github.com/a/rDLLhBFD) (not for credit)
 1. [Homework 1](https://classroom.github.com/a/p6nUREEm) (Due April 10 at 11pm) [pdf](https://github.com/trogdoncourses/amath-586-2020/blob/master/hw1/hw1.pdf)
 2. [Homework 2](https://classroom.github.com/a/BWgTZT1I) (Due April 24 at 11pm) [pdf](https://github.com/trogdoncourses/amath-586-2020/blob/master/hw2/hw2.pdf)
-3. [Homework 3](https://classroom.github.com/a/NGg_Huv2) (Due May 8 at 11pm) [pdf](https://github.com/trogdoncourses/amath-586-2020/blob/master/hw2/hw3.pdf)
+3. [Homework 3](https://classroom.github.com/a/NGg_Huv2) (Due May 8 at 11pm) [pdf](https://github.com/trogdoncourses/amath-586-2020/blob/master/hw3/hw3.pdf)
 
 
 ## Lectures (login with UW netid)
