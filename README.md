@@ -34,7 +34,10 @@ The discussion board is found here: [https://github.com/orgs/trogdoncourses/team
 12. `Lecture 12, More on stability and relative stability` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=609d11b7-4955-4a4f-b051-aba0010fc724) [pdf](https://drive.google.com/open?id=1EnQi4trFlVKG_F5I2j3LlqrmK_-5EsHA) [ipynb](https://github.com/trogdoncourses/amath-586-2020/blob/master/notebooks/RelativeStabilityRegions.ipynb)
 13. `Lecture 13, Stiff ODEs` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7c669765-f532-408e-9f35-aba70103fff6) [pdf](https://drive.google.com/open?id=1T4eRQXAdeFVFqytjI_LDG0fhSZDTu5Ny) [ipynb](https://github.com/trogdoncourses/amath-586-2020/blob/master/notebooks/StiffODEs.ipynb)
 14. `Lecture 14, A-stability` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=20647bb4-1bce-4fbd-b1f3-aba70104005b) [pdf](https://drive.google.com/open?id=1l1fyDHoJ6gVcv1DYJTRgsGiLcivZDUEa) [ipynb](https://github.com/trogdoncourses/amath-586-2020/blob/master/notebooks/Astability.ipynb)
-15. `Lecture 15, Method for the heat equation` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=63c00cb0-ac94-4d17-8166-aba701040099) [pdf](https://drive.google.com/open?id=1KAgrjOo8YHkvhHcoeJg8Deii1l9NWhuR)
+15. `Lecture 15, Methods for the heat equation` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=63c00cb0-ac94-4d17-8166-aba701040099) [pdf](https://drive.google.com/open?id=1KAgrjOo8YHkvhHcoeJg8Deii1l9NWhuR)
+16. `Lecture 16, Stability and convergence for PDEs` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8893931f-08c0-486d-aac0-abae00fcb6c1) [pdf](https://drive.google.com/open?id=11vQHKuJzKdW9h5oYZBja2mRgUNk3CV5r)
+17. `Lecture 17, Crank-Nicolson in Julia` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=508ae10f-14b1-4113-960c-abae00fcb723) [ipynb]()
+18. `Lecture 18, von Neumann stability analysis` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9e0550fb-200e-4ed1-b764-abae00fcb6f7) [pdf](https://drive.google.com/open?id=1_Sc8pKP5R6U4Sw0rxxzC07igiq9vWkEB)
 
 ## Special Topics (login with UW netid)
 
