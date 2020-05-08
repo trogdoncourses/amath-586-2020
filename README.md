@@ -10,6 +10,10 @@ Each assignment will need to be copied from this repository over to the relevant
 
 The discussion board is found here: [https://github.com/orgs/trogdoncourses/teams/586-students](https://github.com/orgs/trogdoncourses/teams/586-students) . If you do not have access and have created at least one git homework repository, let us know.
 
+## Exams
+
+1. [Midterm Exam](https://classroom.github.com/a/d5PDdjtG) (Due May 15 at 11pm) [pdf](https://github.com/trogdoncourses/amath-586-2020/blob/master/midterm/midterm.pdf)
+
 ## Homework
 
 0. [Homework 0](https://classroom.github.com/a/rDLLhBFD) (not for credit)
@@ -38,6 +42,8 @@ The discussion board is found here: [https://github.com/orgs/trogdoncourses/team
 16. `Lecture 16, Stability and convergence for PDEs` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8893931f-08c0-486d-aac0-abae00fcb6c1) [pdf](https://drive.google.com/open?id=11vQHKuJzKdW9h5oYZBja2mRgUNk3CV5r)
 17. `Lecture 17, Crank-Nicolson in Julia` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=508ae10f-14b1-4113-960c-abae00fcb723) [ipynb](https://github.com/trogdoncourses/amath-586-2020/blob/master/notebooks/CrankNicolson.ipynb)
 18. `Lecture 18, von Neumann stability analysis` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9e0550fb-200e-4ed1-b764-abae00fcb6f7) [pdf](https://drive.google.com/open?id=1_Sc8pKP5R6U4Sw0rxxzC07igiq9vWkEB)
+19. `Lecture 19, Crank-Nicolson in 2D` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6187522a-668e-4c20-ac7b-abb50138b23c) [ipynb](https://github.com/trogdoncourses/amath-586-2020/blob/master/notebooks/CrankNicolson2D.ipynb)
+20. `Lecture 20, Characterization of linear second-order PDEs` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=93f659c1-d43a-40fa-899b-abb50138b27f) [pdf](https://drive.google.com/open?id=1Zlp2frLy2AWkMbMiPjTGY2z3s9XHPLqB)
 
 ## Special Topics (login with UW netid)
 
