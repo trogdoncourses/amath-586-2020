@@ -1,0 +1,189 @@
+\documentclass[10pt]{amsart}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{amssymb,amsmath,enumitem,url}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily}
+
+
+\DeclareMathOperator{\D}{d}
+\DeclareMathOperator{\E}{e}
+\newcommand{\half}{\frac{1}{2}}
+\newcommand\unp{U^{n+1}}
+\newcommand\unm{U^{n-1}}
+\newcommand{\bigo}{{\mathrm O}}
+\newcommand{\reals}{\mathbb R}
+
+
+
+\begin{document}
+
+%\topmargin -1.0in
+%\textheight 10.5in
+\pagestyle{empty}
+
+\newcommand{\mline}{\vspace{.2in}\hrule\vspace{.2in}}
+
+
+\title{\bf { AMATH 586 Spring 2020 \\ Midterm Exam ---
+Due May 15 on GitHub by 11pm} }
+\maketitle
+\centerline{Be sure to do a {\tt git pull} to update your local version of the {\tt amath-586-2020} repository.}
+
+This entire exam concerns system of ODEs called the \emph{Toda lattice}.  The system is defined using positions $p_j$, $j = 0, \pm 1, \pm 2,\ldots$ and momenta $q_j$, $j = 0, \pm 1, \pm 2, \ldots$:
+\begin{align}\label{eq:toda}
+  \begin{split}
+  q_j'(t) &= p_j(t),\\
+  p_j'(t) &= e^{-(q_{j+1}(t) - q_j(t))} - e^{-(q_{j}(t) - q_{j-1}(t))}, \quad j = 0, \pm 1, \pm 2,\ldots.
+  \end{split}
+\end{align}
+This is, as defined, an infinite-dimensional ODE system.  We will consider finite-dimensional approximations. 
+
+
+\mline
+
+
+\begin{enumerate}[label={\bf Problem~{\arabic*}:}]
+  \item   Define new variables
+  \begin{align}\label{eq:toda_cov}
+    \begin{split}
+    a_j(t) &= \frac 1 2 e^{-(q_{j+1}(t) - q_j(t))/2},\\
+    b_j(t) &= - \frac 1 2 p_j(t), \quad j = 0, \pm 1, \pm 2,\ldots.
+    \end{split}
+  \end{align}
+  Using \eqref{eq:toda_cov}, first show that the Toda lattice \eqref{eq:toda} can be written as
+  \begin{align} \label{eq:toda_ab}
+    \begin{split}
+    a_j'(t) &= a_j(t) (b_{j+1}(t) - b_j(t)), \\
+    b_j'(t) &= 2 (a_{j-1}^2(t) - a_{j}^2(t)),  \quad j = 0, \pm 1, \pm 2,\ldots.
+    \end{split}
+  \end{align}
+Now consider the time-dependent tridiagonal matrices:
+  \begin{align*}
+    T(t) = \begin{bmatrix}
+      \ddots & \ddots\\
+      \ddots & b_{j-1}(t) & a_{j-1}(t)\\
+      & a_{j-1}(t) & b_{j}(t) & a_{j}(t)\\
+      && a_{j}(t) &  b_{j+1}(t) & \ddots \\
+      &&& \ddots & \ddots
+      \end{bmatrix}, ~~ S(t) = \begin{bmatrix}
+      \ddots & \ddots\\
+      \ddots & 0 & -a_{j-1}(t)\\
+      & a_{j-1}(t) & 0 & -a_{j}(t)\\
+      && a_{j}(t) &  0 & \ddots \\
+      &&& \ddots & \ddots
+      \end{bmatrix}
+  \end{align*}
+  Now, show that \eqref{eq:toda_ab} is equilvalent to
+  \begin{align} \label{eq:toda_T}
+    T'(t) = S(t)T(t) - T(t)S(t).
+  \end{align}
+  Hint: Fix $j$ and consider
+  \begin{align*}
+    e_j^TS(t)T(t)e_k \text{ and } e_j^TT(t)S(t)e_k, \quad k = j-2,j-1,j,j+1,j+2,
+  \end{align*}
+  where $e_j$ denotes the standard basis vector that is all zero except for a one in the $j$th entry.  Despite the fact that the matrices are bi-infinite, you only need to track the $(j-1)$th, $j$th  and $(j+1)$th entries of vectors such as  $e_j^TS(t)$ and $T(t)e_k$.
+  
+\mline
+  
+\item One finite-dimensional approximation of \eqref{eq:toda_T} is to just take a finite section (a square subblock on the diagonal) of both $T$, $P$:
+  \begin{align*}
+    T_N(t) &= \begin{bmatrix}
+      b_1(t) & a_1(t)\\
+      a_1(t) & b_{2}(t) & a_{2}(t)\\
+      & a_{2}(t) & b_{3}(t) & \ddots\\
+      && \ddots & \ddots & a_{N-1}(t) \\
+       &&& a_{N-1}(t) & b_N(t)
+     \end{bmatrix},\\
+    S_N(t) &= \begin{bmatrix}
+      0 & a_1(t)\\
+      -a_1(t) & 0 & a_{2}(t)\\
+      & -a_{2}(t) & 0 & \ddots\\
+      && \ddots & \ddots & a_{N-1}(t) \\
+       &&& -a_{N-1}(t) & 0.
+      \end{bmatrix}
+  \end{align*}
+  The finite section choice  can be understood by formally setting $q_0 = -\infty$ and $q_{N+1} = + \infty$ and then performing the change of variables \eqref{eq:toda_cov}.
+  
+  With initial conditions $b_j(0) = 0$, $a_j(0) = 1/2, j = 1,2,\ldots,N$ and $N = 6$, use your favorite time-stepping method to solve
+  \begin{align*}
+    T_N'(t) = S_N(t) T_N(t) - T_N(t)S_N(t),
+  \end{align*}
+  to $t = 100$ and plot the solution.  You should notice something striking about the solution. You might want to look at eigenvalues of $T_N(0)$. Comment on this.    Repeat this with $b_j(0) = -2$ and $a_j(0) = 1$, $j = 1,2,\ldots,N$ and $N = 12$.
+
+\mline  
+
+\item The Toda lattice in the finite-section case is a Hamiltonian system with Hamiltonian
+  \begin{align*}
+    H(p,q) = \frac 1 2 p_N^2 + \sum_{j=1}^{N-1}\left[ \frac 1 2 p_j^2 + e^{-(q_{j+1} - q_j)} \right].
+  \end{align*}
+  This means that the equations of motion for $q_j(t)$ and $p_j(t)$ can also be written as
+  \begin{align}
+    \label{eq:pq}
+    \begin{split}
+    p_j'(t)  &= - \frac{\partial H}{\partial q_j} (p(t),q(t)),\\
+    q_j'(t)  & = \frac{\partial H}{\partial p_j} (p(t),q(t)),
+  \end{split}\end{align}
+ where $ p(t) = (p_j(t))_{j=1}^N$ and $q(t) = (q_j(t))_{j=1}^N$.   And, by the chain rule, $H$ is conserved:
+  \begin{align*}
+    \frac{d}{dt} H(p(t),q(t)) = 0.
+  \end{align*}
+  Sympletic numerical integrators for Hamiltonian systems are designed to preserve conserved quantities and geometric properties of systems they approximate.  We can summarize the system \eqref{eq:pq} as
+  \begin{align*}
+    p'(t) = J(q(t)),  \quad q'(t) = K(p(t)).
+  \end{align*}
+  One symplectic method is the so-called St\"ormer--Verlet method and it is given by
+  \begin{align*}
+    P^* &= P^n + \frac{k}{2} J(Q^n),\\
+    Q^{n+1} &= Q^n + k K(P^*),\\
+    P^{n+1} &= P^* + \frac{k}{2} J(Q^{n+1}).
+  \end{align*}
+  Convert the initial data $b_j(0) = 0$ and $a_j(0) = 1/2$ for $j = 1,2,\ldots,N$ to $q_j(0), p_j(0)$ for $j = 1,2,\ldots,N$ and solve the system with the St\"ormer-Verlet method.  Perform a convergence study at $t = 1$ for time steps $k = 2^{-j}$, $j = 1,2,3,4,5,6$ (see \url{https://github.com/trogdoncourses/amath-586-2020/blob/master/notebooks/Astability.ipynb}) to determine the order of the method. \\
+
+ \noindent Some hints:
+  \begin{itemize}
+  \item Since the $a_j$,$b_j$ variables depend only on a difference of the $q_j$.  You can set one value, say $q_1(0)$, to be whatever value you wish.
+    \item You also might want to write a function to convert between $a_j,b_j$ and $p_j,q_j$.  Here is a {\tt Julia} implementation:
+      \begin{lstlisting}
+to_a = (p,q) -> .5*exp.(-(q[2:end]-q[1:end-1])/2)
+to_b = (p,q) -> -.5*p
+to_p = (a,b) -> -2*b
+function to_q(a,b) # chooses q[1] = 0
+    q = fill(0.,length(b))
+    q[2:end] = -2*log.(2*a)
+    cumsum(q)
+end \end{lstlisting}
+\item Here is a {\tt Julia} implementation of $J$ and $K$:
+  \begin{lstlisting}
+function J(q) 
+    out = fill(0.,length(b))
+    temp = exp.(q[1:end-1] - q[2:end])
+    out[1:end-1] -= temp
+    out[2:end] += temp
+    out
+end
+
+function K(p)
+    p
+end
+\end{lstlisting}
+\end{itemize}
+
+\noindent \underline{Just for your information}:  A second order method will satisfy:
+\begin{align*}
+  \text{error at time } T \sim C_T k^2.
+\end{align*}
+And the constant $C_T$ is incredibly important as $T$ increases.  Symplectic methods can be used to keep $C_T$ from growing too rapidly and they are very important in, say, planetary dynamics over long time scales.
+      
+
+\mline
+      
+\item (Extra credit)  Form a finite-dimensional approximation of \eqref{eq:toda} using the boundary condition $q_0(t) = q_{N+1}(t)$  and performing the change of variables \eqref{eq:toda_cov}.  Update the matrices $T_N$ and $S_N$ for the periodic case.
+  
+  \end{enumerate}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
