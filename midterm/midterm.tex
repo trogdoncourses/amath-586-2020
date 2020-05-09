@@ -33,7 +33,7 @@ This entire exam concerns system of ODEs called the \emph{Toda lattice}.  The sy
 \begin{align}\label{eq:toda}
   \begin{split}
   q_j'(t) &= p_j(t),\\
-  p_j'(t) &= e^{-(q_{j+1}(t) - q_j(t))} - e^{-(q_{j}(t) - q_{j-1}(t))}, \quad j = 0, \pm 1, \pm 2,\ldots.
+  p_j'(t) &= e^{-(q_{j}(t) - q_{j-1}(t))} - e^{-(q_{j+1}(t) - q_j(t))}, \quad j = 0, \pm 1, \pm 2,\ldots.
   \end{split}
 \end{align}
 This is, as defined, an infinite-dimensional ODE system.  We will consider finite-dimensional approximations. 
@@ -54,7 +54,7 @@ This is, as defined, an infinite-dimensional ODE system.  We will consider finit
   \begin{align} \label{eq:toda_ab}
     \begin{split}
     a_j'(t) &= a_j(t) (b_{j+1}(t) - b_j(t)), \\
-    b_j'(t) &= 2 (a_{j-1}^2(t) - a_{j}^2(t)),  \quad j = 0, \pm 1, \pm 2,\ldots.
+    b_j'(t) &= 2 (a_{j}^2(t) - a_{j-1}^2(t)),  \quad j = 0, \pm 1, \pm 2,\ldots.
     \end{split}
   \end{align}
 Now consider the time-dependent tridiagonal matrices:
@@ -67,9 +67,9 @@ Now consider the time-dependent tridiagonal matrices:
       &&& \ddots & \ddots
       \end{bmatrix}, ~~ S(t) = \begin{bmatrix}
       \ddots & \ddots\\
-      \ddots & 0 & -a_{j-1}(t)\\
-      & a_{j-1}(t) & 0 & -a_{j}(t)\\
-      && a_{j}(t) &  0 & \ddots \\
+      \ddots & 0 & a_{j-1}(t)\\
+      & -a_{j-1}(t) & 0 & a_{j}(t)\\
+      && -a_{j}(t) &  0 & \ddots \\
       &&& \ddots & \ddots
       \end{bmatrix}
   \end{align*}
@@ -95,11 +95,11 @@ Now consider the time-dependent tridiagonal matrices:
        &&& a_{N-1}(t) & b_N(t)
      \end{bmatrix},\\
     S_N(t) &= \begin{bmatrix}
-      0 & -a_1(t)\\
-      a_1(t) & 0 & -a_{2}(t)\\
-      & a_{2}(t) & 0 & \ddots\\
-      && \ddots & \ddots & -a_{N-1}(t) \\
-       &&& a_{N-1}(t) & 0.
+      0 & a_1(t)\\
+      -a_1(t) & 0 & a_{2}(t)\\
+      & -a_{2}(t) & 0 & \ddots\\
+      && \ddots & \ddots & a_{N-1}(t) \\
+       &&& -a_{N-1}(t) & 0.
       \end{bmatrix}
   \end{align*}
   The finite section choice  can be understood by formally setting $q_0 = -\infty$ and $q_{N+1} = + \infty$ and then performing the change of variables \eqref{eq:toda_cov}.
@@ -155,7 +155,7 @@ end \end{lstlisting}
 \item Here is a {\tt Julia} implementation of $J$ and $K$:
   \begin{lstlisting}
 function J(q) 
-    out = fill(0.,length(b))
+    out = fill(0.,length(q))
     temp = exp.(q[1:end-1] - q[2:end])
     out[1:end-1] -= temp
     out[2:end] += temp
