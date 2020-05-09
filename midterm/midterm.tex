@@ -95,11 +95,11 @@ Now consider the time-dependent tridiagonal matrices:
        &&& a_{N-1}(t) & b_N(t)
      \end{bmatrix},\\
     S_N(t) &= \begin{bmatrix}
-      0 & a_1(t)\\
-      -a_1(t) & 0 & a_{2}(t)\\
-      & -a_{2}(t) & 0 & \ddots\\
-      && \ddots & \ddots & a_{N-1}(t) \\
-       &&& -a_{N-1}(t) & 0.
+      0 & -a_1(t)\\
+      a_1(t) & 0 & -a_{2}(t)\\
+      & a_{2}(t) & 0 & \ddots\\
+      && \ddots & \ddots & -a_{N-1}(t) \\
+       &&& a_{N-1}(t) & 0.
       \end{bmatrix}
   \end{align*}
   The finite section choice  can be understood by formally setting $q_0 = -\infty$ and $q_{N+1} = + \infty$ and then performing the change of variables \eqref{eq:toda_cov}.
