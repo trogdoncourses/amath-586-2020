@@ -20,7 +20,7 @@ The discussion board is found here: [https://github.com/orgs/trogdoncourses/team
 1. [Homework 1](https://classroom.github.com/a/p6nUREEm) (Due April 10 at 11pm) [pdf](https://github.com/trogdoncourses/amath-586-2020/blob/master/hw1/hw1.pdf)
 2. [Homework 2](https://classroom.github.com/a/BWgTZT1I) (Due April 24 at 11pm) [pdf](https://github.com/trogdoncourses/amath-586-2020/blob/master/hw2/hw2.pdf)
 3. [Homework 3](https://classroom.github.com/a/NGg_Huv2) (Due May 8 at 11pm) [pdf](https://github.com/trogdoncourses/amath-586-2020/blob/master/hw3/hw3.pdf)
-
+4. [Homework 4](https://classroom.github.com/a/7L_dvJIm) (Due May 29 at 11pm) [pdf](https://github.com/trogdoncourses/amath-586-2020/blob/master/hw4/hw4.pdf)
 
 ## Lectures (login with UW netid)
 
@@ -44,6 +44,9 @@ The discussion board is found here: [https://github.com/orgs/trogdoncourses/team
 18. `Lecture 18, von Neumann stability analysis` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9e0550fb-200e-4ed1-b764-abae00fcb6f7) [pdf](https://drive.google.com/open?id=1_Sc8pKP5R6U4Sw0rxxzC07igiq9vWkEB)
 19. `Lecture 19, Crank-Nicolson in 2D` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6187522a-668e-4c20-ac7b-abb50138b23c) [ipynb](https://github.com/trogdoncourses/amath-586-2020/blob/master/notebooks/CrankNicolson2D.ipynb)
 20. `Lecture 20, Characterization of linear second-order PDEs` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=93f659c1-d43a-40fa-899b-abb50138b27f) [pdf](https://drive.google.com/open?id=1Zlp2frLy2AWkMbMiPjTGY2z3s9XHPLqB)
+21. `Lecture 21, The advection equation` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f4880f41-cf1e-4b29-a802-abbc0130e915) [pdf](https://drive.google.com/open?id=14Kae8YpJGfhmQcBFO8FR80G9CswXUPjN)
+22. `Lecture 22, More methods for the advection equation` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5e4ee2ef-2f4a-487d-9e46-abbc0130e951) [pdf](https://drive.google.com/open?id=1ugiENRwXFi7_QuT7lyqZXZAdDjmRGCaQ)
+23. `Lecture 23, Advection equation demo` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=054933c1-fe44-401c-aa88-abbc0130e97f) [ipynb](https://github.com/trogdoncourses/amath-586-2020/blob/master/notebooks/Advection.ipynb)
 
 ## Special Topics (login with UW netid)
 
