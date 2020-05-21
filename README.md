@@ -47,6 +47,9 @@ The discussion board is found here: [https://github.com/orgs/trogdoncourses/team
 21. `Lecture 21, The advection equation` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f4880f41-cf1e-4b29-a802-abbc0130e915) [pdf](https://drive.google.com/open?id=14Kae8YpJGfhmQcBFO8FR80G9CswXUPjN)
 22. `Lecture 22, More methods for the advection equation` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5e4ee2ef-2f4a-487d-9e46-abbc0130e951) [pdf](https://drive.google.com/open?id=1ugiENRwXFi7_QuT7lyqZXZAdDjmRGCaQ)
 23. `Lecture 23, Advection equation demo` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=054933c1-fe44-401c-aa88-abbc0130e97f) [ipynb](https://github.com/trogdoncourses/amath-586-2020/blob/master/notebooks/Advection.ipynb)
+24. `Lecture 24, Stability for advection methods` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5df8c3f9-8d10-42e2-b578-abc20179f990) [pdf](https://drive.google.com/open?id=13t14vpS6gkuDVfJnkaeH6BUYOH2OfF2v)
+25. `Lecture 25, Cautionary tale for advection methods` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=08d1c5ab-2b32-4ba4-bc7a-abc20179fa02) [ipynb](https://github.com/trogdoncourses/amath-586-2020/blob/master/notebooks/Advection-Caution.ipynb)
+26. `Lecture 26, Beyond scalar advection and scalar diffusion` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0509995b-5bd7-4c23-8a36-abc20179f9c0) [pdf](https://drive.google.com/open?id=16FGLSmnCg5VsgKDGtrNnYJwz0OPpZL4w)
 
 ## Special Topics (login with UW netid)
 
