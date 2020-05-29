@@ -50,6 +50,11 @@ The discussion board is found here: [https://github.com/orgs/trogdoncourses/team
 24. `Lecture 24, Stability for advection methods` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5df8c3f9-8d10-42e2-b578-abc20179f990) [pdf](https://drive.google.com/open?id=13t14vpS6gkuDVfJnkaeH6BUYOH2OfF2v)
 25. `Lecture 25, Cautionary tale for advection methods` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=08d1c5ab-2b32-4ba4-bc7a-abc20179fa02) [ipynb](https://nbviewer.jupyter.org/github/trogdoncourses/amath-586-2020/blob/master/notebooks/Advection-Caution.ipynb)
 26. `Lecture 26, Beyond scalar advection and scalar diffusion` [video](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0509995b-5bd7-4c23-8a36-abc20179f9c0) [pdf](https://drive.google.com/open?id=16FGLSmnCg5VsgKDGtrNnYJwz0OPpZL4w)
+27. `Lecture 27, Heat equation w/no flux BCs` [video]() [ipynb](https://nbviewer.jupyter.org/github/trogdoncourses/amath-586-2020/blob/master/notebooks/TRBDF2-noflux-2D.ipynb)
+28. `Lecture 28, Wave tank` [video]() [ipynb](https://nbviewer.jupyter.org/github/trogdoncourses/amath-586-2020/blob/master/notebooks/WaveTank.ipynb)
+29. `Lecture 29, Exponential integration` [video]() [ipynb](https://nbviewer.jupyter.org/github/trogdoncourses/amath-586-2020/blob/master/notebooks/Exponential%20integration.ipynb)
+
+
 
 ## Special Topics (login with UW netid)
 
