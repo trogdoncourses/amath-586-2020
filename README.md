@@ -13,6 +13,7 @@ The discussion board is found here: [https://github.com/orgs/trogdoncourses/team
 ## Exams
 
 1. [Midterm Exam](https://classroom.github.com/a/d5PDdjtG) (Due May 15 at 11pm) [pdf](https://github.com/trogdoncourses/amath-586-2020/blob/master/midterm/midterm.pdf)
+2. [Final Project](https://classroom.github.com/a/yhhaj7bY) (Due June 9 at 11pm) [pdf](https://github.com/trogdoncourses/amath-586-2020/blob/master/final/Final%20Project.pdf) [ipynb](https://nbviewer.jupyter.org/github/trogdoncourses/amath-586-2020/blob/master/final/Final%20Project.ipynb)
 
 ## Homework
 
