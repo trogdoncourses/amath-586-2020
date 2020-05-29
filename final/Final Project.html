@@ -11784,7 +11784,7 @@ div#notebook {
 </li>
 <li><p>There are 6 extra credit points available if you want to make up some points or if you want to see how to extend your code and (hopefully) learn something new.  If you complete the second extra credit problem you'll see something truly remarkable.  That's in my opinion, of course.</p>
 </li>
-<li><p>This project is heavily adapted from one given out by Randy LeVeque in 2008.</p>
+<li><p>This project is adapted from one given out by Randy LeVeque in 2008.</p>
 </li>
 </ol>
 
@@ -11849,8 +11849,8 @@ v(0) = v_0, \quad w(0) = 0,
 <li><p>If $v_0 = 0.29$ the the solution decays directly to the steady state $v = w = 0$.</p>
 </li>
 </ol>
-<p>Verify plot these two solutions. Numerically, verify that your method is second-order accurate at $t = 0.25$ when $v_0 = 0.29$.</p>
-<p>Lastly, change $I_a = 0.2$ and plot the solution with $v_0 = 0$ and $I_a = 0.2$ until $t = 10$.</p>
+<p>Plot these two solutions. Numerically, verify that your method is second-order accurate at $t = 0.25$ when $v_0 = 0.29$.</p>
+<p>Lastly, change $I_a = 0.2$ and plot the solution with $v_0 = 0$ until $t = 10$.</p>
 
 </div>
 </div>
@@ -11904,8 +11904,11 @@ A = \begin{bmatrix}
 <h1 id="Problem-4">Problem 4<a class="anchor-link" href="#Problem-4">&#182;</a></h1><p>The ODE system can be modified to allow for spatial variations: For $x \in [a,b]$</p>
 <p>\begin{align*}
 v_t(x,t) &amp;= \kappa v_{xx}(x,t)+  \frac 1 \epsilon \left( g(v(x,t)) - w(x,t) + I_a \right), \quad g(v) = v (\alpha - v) (1-v),\\
-w_t(x,t) &amp;= \beta v(x,t) - \gamma w(x,t).\end{align*}</p>
-<p>Now let function <code>TRBDF2_heat(V)</code> apply one time step toward the solution of $v_t = \kappa v_{xx}$ with time step <code>k/2</code>.</p>
+w_t(x,t) &amp;= \beta v(x,t) - \gamma w(x,t),\\
+v_x(a,t) &amp;= 0,\\
+v_x(b,t) &amp; = 0.
+\end{align*}</p>
+<p>Now modify the function <code>TRBDF2_heat(V)</code> to apply one time step toward the solution of $v_t = \kappa v_{xx}$ with time step <code>k/2</code>.</p>
 <p>Supposing that our previous code for <code>TRBDF2()</code> and <code>RK2()</code> is vectorized, Strang splitting becomes (with $I_a = 0$)</p>
 <div class="highlight"><pre><span></span><span class="n">V</span> <span class="o">=</span> <span class="n">TRBDF2_heat</span><span class="p">(</span><span class="n">V</span><span class="p">)</span>
 <span class="n">W</span> <span class="o">=</span> <span class="n">RK2</span><span class="p">(</span><span class="n">V</span><span class="p">,</span><span class="n">W</span><span class="p">,</span><span class="n">k</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
