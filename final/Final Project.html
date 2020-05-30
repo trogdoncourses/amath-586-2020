@@ -11796,7 +11796,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Problem-1">Problem 1<a class="anchor-link" href="#Problem-1">&#182;</a></h1><p>Consider the ODE:</p>
-<p>\begin{align} v'(t) = \frac 1 \epsilon g(v(t)), \quad g(v) = v (\alpha - v) (1-v) - w. \end{align}</p>
+<p>\begin{align} v'(t) = \frac 1 \epsilon g(v(t)), \quad g(v) = v (\alpha - v) (v-1) - w. \end{align}</p>
 <p>Using the TR-BDF-2 method,</p>
 <p>$$U^* = U^n + \frac k 4 (f(U^n) + f(U^*)),\\
 U^{n+1} = \frac 1 3 \left( 4 U^* -U^n + k f(U^{n+1})\right),$$</p>
@@ -11815,7 +11815,7 @@ U^{n+1} = \frac 1 3 \left( 4 U^* -U^n + k f(U^{n+1})\right),$$</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Problem-2">Problem 2<a class="anchor-link" href="#Problem-2">&#182;</a></h1><p>The previous ODE becomes more interesting when it is coupled with another differential equation that evolves $w$:</p>
-<p>\begin{align*} v'(t) &amp;= \frac 1 \epsilon \left( g(v(t)) - w(t) + I_a \right), \quad g(v) = v (\alpha - v) (1-v),\\
+<p>\begin{align*} v'(t) &amp;= \frac 1 \epsilon \left( g(v(t)) - w(t) + I_a \right), \quad g(v) = v (\alpha - v) (v-1),\\
 w'(t) &amp;= \beta v(t) - \gamma w(t).\end{align*}</p>
 <p>This is a simple model that exhibits many features of excitable media, and is a simplification of the famous Hodgkin-Huxley equations that are a better model for propagation in neuronal systems.  In this system $v(t)$ models the membrane potential while $w(t)$ models the concentration of an ion.</p>
 <p>Since we have already gone through the effort to solve the above system, we would like to be able to reuse our code.  Write the system as</p>
@@ -11903,7 +11903,7 @@ A = \begin{bmatrix}
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Problem-4">Problem 4<a class="anchor-link" href="#Problem-4">&#182;</a></h1><p>The ODE system can be modified to allow for spatial variations: For $x \in [a,b]$</p>
 <p>\begin{align*}
-v_t(x,t) &amp;= \kappa v_{xx}(x,t)+  \frac 1 \epsilon \left( g(v(x,t)) - w(x,t) + I_a \right), \quad g(v) = v (\alpha - v) (1-v),\\
+v_t(x,t) &amp;= \kappa v_{xx}(x,t)+  \frac 1 \epsilon \left( g(v(x,t)) - w(x,t) + I_a \right), \quad g(v) = v (\alpha - v) (v-1),\\
 w_t(x,t) &amp;= \beta v(x,t) - \gamma w(x,t),\\
 v_x(a,t) &amp;= 0,\\
 v_x(b,t) &amp; = 0.
@@ -11951,7 +11951,7 @@ Solve until $t = 4$.  You should see a travelling wave develop and propagate.</p
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Extra-Credit-Problem-2-(4-points)">Extra Credit Problem 2 (4 points)<a class="anchor-link" href="#Extra-Credit-Problem-2-(4-points)">&#182;</a></h1><p>Consider the extension of the previous problem to two spatial dimensions: For $x \in [a,b], ~y \in [a,b]$:
 \begin{align*}
-v_t(x,y,t) &amp;= \kappa v_{xx}(x,y,t) + \kappa v_{yy}(x,y,t)+  \frac 1 \epsilon \left( g(v(x,y,t)) - w(x,y,t) + I_a \right), \quad g(v) = v (\alpha - v) (1-v),\\
+v_t(x,y,t) &amp;= \kappa v_{xx}(x,y,t) + \kappa v_{yy}(x,y,t)+  \frac 1 \epsilon \left( g(v(x,y,t)) - w(x,y,t) + I_a \right), \quad g(v) = v (\alpha - v) (v-1),\\
 w_t(x,y,t) &amp;= \beta v(x,y,t) - \gamma w(x,y,t).
 \end{align*}</p>
 <p>with initial and boundary data given by</p>
